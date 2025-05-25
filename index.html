@@ -1,0 +1,262 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion - Comunidade Jovem Cristã Adventista</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.138.0/build/three.module.js"
+        }
+    }
+    </script>
+    <!-- <script type="module" src="script.js"></script> -->
+</head>
+<body>
+    <div id="particle-container"></div>
+
+    <header id="main-header">
+        <div class="container">
+            <img src="zion_logo.png" alt="Zion Logo" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#videos">Vídeos</a></li>
+                    <li><a href="#news">Notícias</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-carousel">
+            <div class="slide active">
+                <img src="banner_img_1.png" alt="Jovens adorando">
+                <div class="slide-caption">
+                    <h2>Somos luz no mundo</h2>
+                    <p>Iluminando caminhos com fé e esperança.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="banner_img_2.png" alt="Encontro espiritual na natureza">
+                <div class="slide-caption">
+                    <h2>Preparando o caminho</h2>
+                    <p>Para o retorno glorioso de Cristo.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="banner_img_3.png" alt="Comunidade unida">
+                <div class="slide-caption">
+                    <h2>Zion: Um lugar de acolhimento</h2>
+                    <p>Conectando corações, transformando vidas.</p>
+                </div>
+            </div>
+            <button class="carousel-control prev">&lt;</button>
+            <button class="carousel-control next">&gt;</button>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container content-section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre Nós: Comunidade Zion</h2>
+                        <p>A Comunidade Zion é um movimento de jovens cristãos adventistas dedicados a viver e compartilhar o evangelho de Jesus Cristo de uma forma relevante e transformadora. Nossa missão é evangelizar com paixão, acolher a todos com amor e promover uma transformação genuína em nossas vidas e na sociedade, refletindo a glória celestial em cada ação. Buscamos ser um farol de esperança, fé e espiritualidade jovem, preparando uma geração para o encontro com o Salvador.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="about_us_img.png" alt="Jovens unidos em oração e ação social">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="section-padding">
+            <div class="container">
+                <h2>Nossa Jornada em Números</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="1200">2604</h3>
+                        <p>Membros Ativos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="15">315</h3>
+                        <p>Comunidades Jovens pelo Mundo</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="350">132</h3>
+                        <p>Eventos Realizados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section-padding">
+            <div class="container">
+                <h2>Galeria de Momentos</h2>
+                <div class="photo-grid">
+                    <div class="photo-item"><img src="gallery_img_1.png" alt="Encontro de jovens Zion"></div>
+                    <div class="photo-item"><img src="gallery_img_2.png" alt="Culto jovem Zion"></div>
+                    <div class="photo-item"><img src="gallery_img_3.png" alt="Retiro espiritual Zion"></div>
+                    <div class="photo-item"><img src="gallery_img_4.png" alt="Ação de evangelismo Zion"></div>
+                    <div class="photo-item"><img src="gallery_img_5.png" alt="Louvor e adoração Zion"></div>
+                    <div class="photo-item"><img src="gallery_img_6.png" alt="Batismo na comunidade Zion"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="section-padding">
+            <div class="container">
+                <h2>Próximos Eventos</h2>
+                <div class="event-highlight">
+                    <h3>Conferência Geração Zion 2024</h3>
+                    <p>Tema: "Despertar para o Eterno"</p>
+                    <div id="countdown">
+                        <div><span id="days">10</span> Dias</div>
+                        <div><span id="hours">12</span> Horas</div>
+                        <div><span id="minutes">4</span> Minutos</div>
+                        <div><span id="seconds">36</span> Segundos</div>
+                    </div>
+                    <p>Local: Centro de Convenções Celestial | Data: 25-27 de Dezembro de 2024</p>
+                     <a href="#contact" class="btn-glow">Participar</a>
+                </div>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <img src="event_placeholder_1.png" alt="Evento Vigília Jovem">
+                        <h4>Vigília Jovem "Luz da Manhã"</h4>
+                        <p>Data: Toda primeira sexta do mês</p>
+                        <p>Local: Templo Zion Central</p>
+                        <a href="#contact" class="btn-glow">Mais Informações</a>
+                    </div>
+                    <div class="event-card">
+                        <img src="event_placeholder_2.png" alt="Evento Ação Social">
+                        <h4>Impacto Esperança Comunitário</h4>
+                        <p>Data: 15 de Novembro de 2024</p>
+                        <p>Local: Praça da Cidade</p>
+                         <a href="#contact" class="btn-glow">Quero Ajudar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="section-padding">
+            <div class="container">
+                <h2>Vídeos Inspiradores</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9mnGguuLNIo?si=sUJvGzQgqWcpKPMX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>Pregação: Semana Jovem 2024 - MARANATA | com Pr. Eduardo Batista (EP. 1)</p>
+                    </div>
+                    <div class="video-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wNA7BBh8oaA?si=TzEuAO274KbBYKmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>Louvor: SEMANA DE ORAÇÃO - SOBREVIVENTE</p>
+                    </div>
+                    <div class="video-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MpuGTGz7nI4?si=Ls9nOK5Fx7a59Tvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>Testemunho: Valter Baía | Vida por Vidas | Convenção Maranata</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="news" class="section-padding">
+            <div class="container">
+                <h2>Notícias e Atualizações</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="news_placeholder_1.png" alt="Notícia sobre novo projeto">
+                        <div class="news-content">
+                            <span class="news-date">15 de Outubro, 2024</span>
+                            <h3>Zion Lança Projeto "Mãos que Ajudam"</h3>
+                            <p>Conheça nossa nova iniciativa de apoio comunitário e como você pode participar.</p>
+                            <a href="#" class="btn-glow-small">Leia Mais</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                         <img src="news_placeholder_2.png" alt="Notícia sobre retiro espiritual">
+                        <div class="news-content">
+                            <span class="news-date">01 de Outubro, 2024</span>
+                            <h3>Retiro Espiritual de Jovens: Um Sucesso!</h3>
+                            <p>Veja os melhores momentos e testemunhos do nosso último retiro.</p>
+                            <a href="#" class="btn-glow-small">Leia Mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <form action="https://formsubmit.co/a.luzdesenvolvimentos@gmail.com" method="POST" id="contact-form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Novo contato pelo site Zion!">
+                    <input type="hidden" name="_template" value="box">
+                    
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Seu Telefone">
+                    </div>
+                    <div class="form-group">
+                        <select id="request-type" name="Pedido" required>
+                            <option value="">Tipo de Pedido...</option>
+                            <option value="Pedido de Oração">Pedido de Oração</option>
+                            <option value="Solicitar Visita">Solicitar Visita</option>
+                            <option value="Dúvidas Gerais">Dúvidas Gerais</option>
+                            <option value="Quero Participar">Quero Participar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="Mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-glow">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="social-media" class="section-padding">
+            <div class="container">
+                <h2>Siga-nos nas Redes</h2>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="icon_instagram.png" alt="Instagram Zion"></a>
+                    <a href="#" target="_blank"><img src="icon_youtube.png" alt="YouTube Zion"></a>
+                    <a href="#" target="_blank"><img src="icon_facebook.png" alt="Facebook Zion"></a>
+                    <a href="#" target="_blank"><img src="icon_spotify.png" alt="Spotify Zion"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>Comunidade Zion</p>
+                    <p>Rua Celestial, 777 - Bairro Esperança</p>
+                    <p>Cidade da Fé, Estado da Graça</p>
+                    <p>Contato: (00) 12345-6789 | email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0a3afaeb4a1b4af80baa9afaeeeafb2a7">[email&#160;protected]</a></p>
+                </div>
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.170748911273!2d-46.65681998502277!3d-23.56233998468257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b79fd33575%3A0x4b3609594773a9d1!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1670000000000" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; 2024 Comunidade Zion. Todos os direitos reservados.</p>
+                <p>"Para que todos sejam um, Pai, como tu estás em mim e eu em ti. Que eles também estejam em nós, para que o mundo creia que tu me enviaste." - João 17:21</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
