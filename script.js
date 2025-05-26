@@ -238,7 +238,27 @@ document.addEventListener('DOMContentLoaded', () => {
     //         // Here you would typically send data to a server
     //     });
     // }
+
+    // Toggle menu mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('open');
+        });
+
+        // Fecha o menu ao clicar em um link (opcional)
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('open');
+            });
+        });
+    }
+
     initParticles();
+    
 
 });
 
